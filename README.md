@@ -20,7 +20,7 @@ step 3 - Start the web app with python3 aegis.py
 step 4 - visit the web app.
 
 ## Screenshots
-<img src="https://github.com/kittymagician/Aegis/blob/master/img/Upload.png" width="275" height="226">
+<img src="https://github.com/kittymagician/Aegis/blob/master/img/Upload.png" width="275" height="375">
 Upload Page
 <img src="https://github.com/kittymagician/Aegis/blob/master/img/Results.png" width="311" height="111">
 Results Page
