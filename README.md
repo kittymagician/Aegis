@@ -18,6 +18,13 @@ step 3 - Start the web app with python3 aegis.py
 
 
 step 4 - visit the web app.
+
+## Screenshots
+<img src="https://github.com/kittymagician/Aegis/blob/master/img/Upload.png">
+Upload Page
+<img src="https://github.com/kittymagician/Aegis/blob/master/img/Results.png">
+Results Page
+
 ## Requirements
 Python3 - https://python.org
 
