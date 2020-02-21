@@ -1,0 +1,40 @@
+<!doctype html>
+<br>
+<center>
+  <a href="/">
+   <img src="/static/logo.svg" width="200" height="100">
+  </a>
+</center>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>About - AEGIS</title>
+		<body>
+    <center>
+    <h4>About Aegis</h4>
+    <p>Aegis is a web interface to allow non-technical users to run YARA scans on files to classify them.</p>
+    <p>It was designed by <a href='https://kittymagician.com'>KittyMagician</a></p>
+    <h4>What is YARA?</h4>
+    <p><a href='https://virustotal.github.io/yara'>YARA</a> is a pattern matching toolkit that is typically used by computer security incident response teams to identify malware.</p>
+    <p>It supports textural and binary patterns. YARA was designed by Victor Manuel Alvarez for VirusTotal/Chronicle</p>
+    <h4>Technology Stack</h4>
+      <p>Aegis is built with the <a href='https://palletsprojects.com/p/flask/'>Flask</a> Microframework, <a href='https://www.python.org'>Python3</a>, <a href='https://github.com/VirusTotal/yara-python'>Yara-Python</a> and <a href='https://virustotal.github.io/yara/'>Yara</a></p>
+	  <h4>What happens when I upload a sample to Aegis?</h4>
+      <p>The sample is uploaded to the server in the <code>/uploads</code> folder. the yara rules are compiled and sample is then tested againist the super rule <code>output.yar</code>.</p>
+      <p>Aegis redirects to a results page diplsaying the results and deletes the sample file.</p>
+    <h4>Where can I get rules?</h4>
+    <p>There are many different places you can obtain community yara rules for free. Here's a few exmaple places</p>
+     <ul>
+      <li><a href='https://github.com/Yara-Rules/rules'>Yara-Rules</a></li>
+       <li><a href='https://github.com/Neo23x0/signature-base/tree/master/yara'>Neo23x0 Signature-Base</a></li>
+      <li><a href='https://github.com/InQuest/awesome-yara'>InQuest awesome-yara</a></li>
+    </ul>  
+    <p>If you build some cool rules consider contributing them back to the community!</p>
+    <p>If you wish to add the rules to the scanner save them to the <code>/rules</code> folder.</p>
+    <p>Aegis compiles the rules into a single super yara rule called output.yar during each execution (Aegis requires no restarts for changes to be made).</p>
+    <h4>Does Aegis test yara rules?</h4>
+    <p>No. You will need to test the yara rules before including them for use in Aegis.</p>
+    </center>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
