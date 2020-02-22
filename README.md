@@ -17,7 +17,7 @@ step 2 - compile YARA and install packages for python.
 step 3 - Start the web app with python3 aegis.py
 
 
-step 4 - visit the web app.
+step 4 - visit the web app by default the port is set to 3000 (in aegis.py) however this can be modified to use port 80 by using [gunicorn/nginx](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04).
 
 ## Screenshots
 <img src="https://github.com/kittymagician/Aegis/blob/master/img/Upload.png" width="275" height="180">
